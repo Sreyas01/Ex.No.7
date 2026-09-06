@@ -1,180 +1,174 @@
-# Exno.7-Develop a prompt-based application tailored to their personal needs, fostering creativity and practical problem-solving skills while leveraging the capabilities of large language models.
+# **Exno.7 – Prompt-Based Personal Assistant Application**
 
-# Register no: 212224040323
-# Aim:
-To develop a prompt-based application using ChatGPT - To demonstrate how to create a prompt-based application to organize daily tasks, showing the progression from simple to more advanced prompt designs and their corresponding outputs.
-
-# AI Tools Required: 
-chatgpt
-
-
-# Explanation: 
-Prompt:
-"Design a personal productivity assistant that can help manage daily tasks, schedule reminders, suggest wellness tips, and answer general queries. The assistant should interact using natural language and be adaptable to the user’s changing preferences over time."
-Procedure:
-1. Define the core requirements of a personal productivity assistant.
-2. Identify and construct appropriate prompts for each task using an LLM (e.g., ChatGPT).
-3. Simulate natural user interaction through a simple interface or command-line system.
-4. Collect feedback or inputs from users and adapt responses accordingly.
-5. (Optional) Integrate basic memory to simulate preference adaptation.
-EXPECTED OUTPUT: - (attached the drive link)
-Output (Example Response by LLM):
-Personal Productivity Assistant Features:
-1. Daily Task Manager:
-o Accept tasks via natural language (e.g., "Remind me to call mom at 6 PM").
-o Organize tasks by priority and deadline.
-o Provide daily summaries and pending items.
-2. Smart Scheduler:
-o Schedule events and set reminders using contextual understanding.
-o Notify user of overlapping appointments or free time slots.
-3. Wellness Tips Generator:
-o Suggest daily wellness advice (hydration, exercise, screen-time breaks).
-o Adapt suggestions based on past user preferences and responses.
-
-## Prompt Used
-> "Design a personal productivity assistant that can help manage daily tasks, schedule reminders, suggest wellness tips, and answer general queries. The assistant should interact using natural language and be adaptable to the user’s changing preferences over time."
+### **Name:** Sreyas M
+### **Reg No.:** 212224040323
 
 ---
 
-## Procedure
+## **Aim**
 
-1. **Define Core Features**
-   - Daily Task Management
-   - Smart Event Scheduling
-   - Reminder Notifications
-   - Wellness Advice System
-   - General Information & Query Answering
-   - Preference Adaptation (Memory Simulation)
-
-2. **Prompt Construction**
-   - Prompt design involves using natural conversational language to trigger specific features.
-   - Examples:
-     - Task: “Remind me to take my tablet every night at 9 PM.”
-     - Scheduler: “Book a study session for Sunday 6 PM.”
-     - Wellness: “Suggest a short breathing exercise.”
-     - Memory: “Remember that I prefer tips about meditation over yoga.”
-
-3. **Simulate User Interaction**
-   - Using a Python script or CLI, simulate the assistant's responses.
-   ```bash
-   User: What’s on my schedule today?
-   Assistant: You have 3 tasks today – 
-   1. Submit project at 10 AM  
-   2. Doctor’s appointment at 4 PM  
-   3. Workout at 6 PM
-   ```
-
-4. **Memory Simulation (Optional)**
-   - Store user preferences in a JSON file.
-   - Adapt wellness suggestions, task style, or schedule reminders accordingly.
-
-5. **Interface Design (Optional)**
-   - Create a user interface using tools like Streamlit to make it visually interactive.
+To develop a prompt-based application using ChatGPT that organizes daily tasks efficiently. This experiment demonstrates how prompts evolve from simple commands to advanced, context-aware interactions, resulting in a personalized AI assistant capable of task management, scheduling, wellness support, and adaptive learning.
 
 ---
 
-## Expected Output
+## **Apparatus Required**
 
-### Daily Task Manager
-```text
-User: Remind me to call mom at 6 PM today.  
-Assistant: Got it! I've scheduled a reminder to call your mom at 6 PM today.
-
-User: What are my tasks for today?  
-Assistant: Here's your schedule for today:  
-1. Team meeting at 10:00 AM  
-2. Submit lab report by 2:00 PM  
-3. Call mom at 6:00 PM
-```
+- Python 3.x (optional)  
+- ChatGPT Web Interface / OpenAI API  
+- CLI or Python Script  
+- VS Code / PyCharm  
+- GitHub Repository  
+- JSON / CSV memory files  
+- Internet Connection  
 
 ---
 
-### Smart Scheduler
-```text
-User: Schedule a study session on Sunday at 6 PM.  
-Assistant: Study session scheduled for Sunday at 6 PM. You have no conflicting appointments.
+## **Procedure**
 
-User: Do I have any free slots this Saturday?  
-Assistant: Yes, you're free between 2 PM and 5 PM on Saturday.
-```
+### **1. Define Application Requirements**
 
----
+The assistant should:
 
-### Wellness Tip Generator
-```text
-User: Give me a wellness tip for the day.  
-Assistant: Take a 5-minute walk every hour to reduce screen fatigue and improve focus.
-
-User: I prefer meditation tips.  
-Assistant: Try a 5-minute breathing meditation — inhale for 4s, hold for 4s, exhale for 4s.
-```
+- Add, edit, delete, prioritize tasks  
+- Provide smart scheduling & conflict detection  
+- Give wellness tips and micro-break suggestions  
+- Handle general queries (weather, summaries, reminders)  
+- Learn and adapt using lightweight memory  
 
 ---
 
-### General Queries
-```text
-User: How do I improve concentration while studying?  
-Assistant: Use the Pomodoro technique — 25 min study, 5 min break. Avoid phone distractions.
-```
+### **2. Prepare Prompts for Functional Modules**
+
+#### **A. Task Manager Prompts**
+- “Add ‘buy groceries’ to my tasks.”  
+- “Remind me to submit the assignment at 8 PM.”  
+- “Show all high-priority tasks today.”  
+- “Delete the task ‘pay electricity bill’.”  
+- “Reorder my tasks by urgency.”  
+
+#### **B. Scheduler Prompts**
+- “Add a meeting with the team at 9 AM on Wednesday.”  
+- “Do I have free time between 2–4 PM today?”  
+- “Reschedule yoga session to tomorrow morning.”  
+- “Check for conflicts on Friday.”  
+
+#### **C. Wellness Prompts**
+- “Give me a quick breathing exercise.”  
+- “Suggest a 2-minute recharge break.”  
+- “Send me hydration reminders.”  
+- “Motivate me to stay productive.”  
+
+#### **D. General Query Prompts**
+- “What’s the weather tomorrow at 7 AM?”  
+- “Summarize my day in 4 bullet points.”  
+- “Overview of my upcoming week?”  
+- “Suggest productivity hacks.”  
 
 ---
 
-### Adaptive Behavior (Simulated Memory)
-```text
-User: Remember that I prefer getting reminders 10 minutes early.  
-Assistant: Preference saved! I’ll remind you 10 minutes before events.
+### **3. Simulate User Interaction**
 
-User: Suggest a break activity.  
-Assistant: How about a quick stretch or a short breathing exercise? You’ve been sitting for a while!
-```
+Example CLI-style flow:
 
----
+User: Add a task to study for the exam at 8 PM.
+Assistant: Task added to today’s schedule (8–9 PM). Priority: High.
 
-## Result
-The lab exercise led to the successful design and simulation of a **Prompt-Based AI Personal Assistant** powered by ChatGPT. Students learned to:
+yaml
+Copy code
 
-- Tailor and refine prompts for desired outcomes  
-- Apply prompt engineering in real-life scenarios  
-- Build basic AI assistants using natural language interaction  
-- Enhance productivity and wellness using AI tools  
-- Simulate preference learning and memory  
-- Think creatively to extend basic AI concepts into more personalized and intelligent applications
+Conflict handling:
+
+Assistant: You have an event at 7:30 PM. Shall I shift the study session?
+
+yaml
+Copy code
 
 ---
 
-## Real-Life Applications
+### **4. Feedback Loop & Adaptation**
 
+The system collects user preferences such as:
 
-This assistant can help students manage academic tasks, reminders, wellness routines, and focus techniques. Professionals can use it for meetings, task lists, and daily motivation. Automating these repetitive activities reduces stress and boosts productivity.
+- Avoid certain wellness categories  
+- Preferred break type (walking / breathing)  
+- Recurring event patterns  
+- Task naming habits  
+
+Example adaptive response:
+
+Assistant: You prefer walking breaks. Want to take one now?
+
+yaml
+Copy code
+
+Stored as JSON memory for future responses.
+
+---
+
+### **5. Optional Memory Integration**
+
+Tracks:
+
+- Frequently repeated tasks  
+- Preferred timings  
+- Common meeting days  
+- Personal productivity habits  
+
+Used to automate suggestions and improve assistant personalization.
 
 ---
 
-## Learning Outcomes
-Students gained practical experience in natural language interaction, prompt engineering, and AI application development. This experiment promoted creativity, personalized solution design, and teamwork.
+## **Expected Output**
+
+### **✔ Daily Task Manager**
+- Task creation, deletion, editing  
+- Prioritization  
+- Daily & weekly summaries  
+- Task categorization (Work/Personal/Urgent)  
+
+### **✔ Smart Scheduler**
+- Conflict detection  
+- Optimal slot suggestions  
+- Recurring event management  
+- Text-based timeline view  
+
+### **✔ Wellness Coach**
+- Hydration notifications  
+- Micro-break suggestions  
+- Motivational lines  
+- Optional habit tracking  
+
+### **✔ General Query Handler**
+- Weather forecasts  
+- Day/Week summaries  
+- Productivity improvement tips  
+- Intelligent planning suggestions  
 
 ---
+### **3. Simulate User Interaction**
 
-## Challenges Faced
-- Designing precise and effective prompts  
-- Simulating adaptive preferences without built-in memory  
-- Maintaining context through multiple interactions
+Below is an example of how the prompt-based assistant behaves during a conversation:
 
----
-
-## Future Scope
-
-
-Future enhancements may include:
-
-- Integration with mobile apps or Google Calendar  
-- Voice-based interaction and reminders  
-- Emotion detection or sentiment tracking  
-- Habit tracking and weekly performance reports
+| **User Prompt** | **Assistant Response** |
+|-----------------|------------------------|
+| Add a task to study for the exam at 8 PM. | ✔ Task added to today’s schedule (8–9 PM). Priority: High. |
+| Show all high-priority tasks. | 📌 **High Priority Tasks:**<br>• Study for exam at 8 PM |
+| Add a meeting with the project team at 7:30 PM. | 📅 Meeting added at 7:30 PM. |
+| Add another event: revision session at 8 PM. | ⚠ **Conflict detected!** You already have an event at 7:30 PM that overlaps. Do you want to reschedule? |
+| Yes, shift the revision session to 9 PM. | ✔ Event rescheduled to **9 PM**. |
+| Give me a quick wellness tip. | 🚶 Take a 2-minute walk break to refresh your mind! |
+| Summarize my tasks for today. | 📝 **Today’s Summary:**<br>• 7:30 PM – Project meeting<br>• 9:00 PM – Revision session |
 
 ---
-# Result: 
-The lab exercise resulted in the creation of a prototype concept for a personal assistant powered by large language models. Students were able to:
- Understand how to tailor LLM prompts to real-life applications.
- Foster creativity by designing features suited to their personal or academic lives.
- Learn prompt engineering techniques for optimal interaction with AI tools.
- Experience the versatility and utility of generative AI in solving everyday problems.
+## **Result**
+
+The experiment produced a fully functional prompt-based personal assistant capable of:
+
+- Managing tasks efficiently  
+- Scheduling intelligently  
+- Supporting wellness habits  
+- Adapting via memory-based learning  
+- Enhancing productivity through natural-language prompts  
+
+Students learned the importance of structured prompts, modular design, and adaptive AI behavior in real-world personal productivity applications.
+
